@@ -13,6 +13,9 @@
 		B3FB534429EDB191007FA45C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FB534329EDB191007FA45C /* Preview Assets.xcassets */; };
 		B3FB534D29EDB1E0007FA45C /* RestaurantModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3FB534B29EDB1E0007FA45C /* RestaurantModel.xcdatamodeld */; };
 		B3FB534F29EDB299007FA45C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB534E29EDB299007FA45C /* DataController.swift */; };
+		B3FB535229EDB555007FA45C /* AddRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB535129EDB555007FA45C /* AddRestaurantView.swift */; };
+		B3FB535429EDB72D007FA45C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB535329EDB72D007FA45C /* TimeFormatter.swift */; };
+		B3FB535629EDC876007FA45C /* EditRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB535529EDC876007FA45C /* EditRestaurantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		B3FB534329EDB191007FA45C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3FB534C29EDB1E0007FA45C /* RestaurantModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestaurantModel.xcdatamodel; sourceTree = "<group>"; };
 		B3FB534E29EDB299007FA45C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B3FB535129EDB555007FA45C /* AddRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantView.swift; sourceTree = "<group>"; };
+		B3FB535329EDB72D007FA45C /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		B3FB535529EDC876007FA45C /* EditRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRestaurantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,9 @@
 		B3FB533B29EDB18E007FA45C /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				B3FB535029EDB534007FA45C /* Views */,
 				B3FB533C29EDB18E007FA45C /* RestaurantApp.swift */,
-				B3FB533E29EDB18E007FA45C /* ContentView.swift */,
+				B3FB535329EDB72D007FA45C /* TimeFormatter.swift */,
 				B3FB534A29EDB1B6007FA45C /* DataModel */,
 				B3FB534029EDB191007FA45C /* Assets.xcassets */,
 				B3FB534229EDB191007FA45C /* Preview Content */,
@@ -79,6 +86,16 @@
 				B3FB534E29EDB299007FA45C /* DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		B3FB535029EDB534007FA45C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB533E29EDB18E007FA45C /* ContentView.swift */,
+				B3FB535129EDB555007FA45C /* AddRestaurantView.swift */,
+				B3FB535529EDC876007FA45C /* EditRestaurantView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FB533F29EDB18E007FA45C /* ContentView.swift in Sources */,
+				B3FB535429EDB72D007FA45C /* TimeFormatter.swift in Sources */,
 				B3FB534F29EDB299007FA45C /* DataController.swift in Sources */,
+				B3FB535629EDC876007FA45C /* EditRestaurantView.swift in Sources */,
 				B3FB534D29EDB1E0007FA45C /* RestaurantModel.xcdatamodeld in Sources */,
+				B3FB535229EDB555007FA45C /* AddRestaurantView.swift in Sources */,
 				B3FB533D29EDB18E007FA45C /* RestaurantApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
