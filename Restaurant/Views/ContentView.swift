@@ -16,13 +16,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .leading){
-//                Text("\(Int(totalCaloriesToday())) calories today")
-//                    .foregroundColor(.gray)
-//                    .padding(.horizontal)
                 List{
                     ForEach(restaurant){
                         restaurant in
-                        NavigationLink(destination: Text("\(restaurant.rate)")){
+                        NavigationLink(destination: EditRestaurantView(restaurant: restaurant)){
                             HStack{
                                 VStack(alignment: .leading, spacing: 6){
                                     Text(restaurant.name!).bold()
@@ -64,9 +61,7 @@ struct ContentView: View {
             DataController().save(context: managedObjectContext)
         }
     }
-//    private func totalCaloriesToday()->Double{
-//        return 0.0
-//    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
