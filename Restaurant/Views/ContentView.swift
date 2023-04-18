@@ -23,7 +23,7 @@ struct ContentView: View {
                             HStack{
                                 VStack(alignment: .leading, spacing: 6){
                                     Text(restaurant.name!).bold()
-                                    Text("\(Int(restaurant.rate))") + Text(" rate").foregroundColor(.red)
+                                    Text("\(Int(restaurant.rate))") + Text(" stars").foregroundColor(.red)
                                 }
                                 Spacer()
                                 Text(calculateTimeSince(date: restaurant.date!)).foregroundColor(.gray).italic()
